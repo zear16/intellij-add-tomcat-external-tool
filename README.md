@@ -15,6 +15,8 @@ Integrate Tomcat with IntelliJ IDEA Community
     * Program: C:\tools\tomcat\apache-tomcat-9.0.12\bin\catalina.bat
     * Argument: jpda run
 
+![](resources/set-external-tool-tomcat.png)
+
 ## Setup remote debug <a name="topic-setup-remote-debug"></a>
 
 * Run > Edit Configurations
@@ -26,9 +28,15 @@ Integrate Tomcat with IntelliJ IDEA Community
     * Port: 8000
 * In tab Logs Set console out put file to "C:\tools\tomcat\apache-tomcat-9.0.12\logs\*.*"    
 
+![](resources/set-run-remote-tomcat-debug.png)
+
+![](resources/set-run-remote-tomcat-debug-log.png)
+
 ## Setup Maven create WAR and deploy
 
 * Run > Edit Configurations
 * Click "+" and select "Maven"
 * Add new Maven with
     * Command line: war:war org.codehaus.mojo:wagon-maven-plugin:upload-single -Dwagon.fromFile=C:\work\ptvn-ep-mtl\web\target\ebd.war -Dwagon.url=file://C:\tools\tomcat\apache-tomcat-9.0.12\webapps\
+
+![](resources/set-maven-create-and-deploy-war.png)
