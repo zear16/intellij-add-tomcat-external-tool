@@ -5,6 +5,7 @@ Integrate Tomcat with IntelliJ IDEA Community
 * [Setup external tool](#topic-setup-external-tool)
 * [Setup remote debug](#topic-setup-remote-debug)
 * [Setup Maven Create WAR and Deploy](#topic-setup-maven-create-war-and-deploy)
+* [Start external tool](#topic-start-external-tool)
 
 ## Setup external tool <a name="topic-setup-external-tool"></a>
 
@@ -32,7 +33,7 @@ Integrate Tomcat with IntelliJ IDEA Community
 
 ![](resources/set-run-remote-tomcat-debug-log.png)
 
-## Setup Maven create WAR and deploy
+## Setup Maven create WAR and deploy <a name="topic-setup-maven-create-war-and-deploy"></a>
 
 * Run > Edit Configurations
 * Click "+" and select "Maven"
@@ -40,3 +41,7 @@ Integrate Tomcat with IntelliJ IDEA Community
     * Command line: war:war org.codehaus.mojo:wagon-maven-plugin:upload-single -Dwagon.fromFile=C:\work\ptvn-ep-mtl\web\target\ebd.war -Dwagon.url=file://C:\tools\tomcat\apache-tomcat-9.0.12\webapps\
 
 ![](resources/set-maven-create-and-deploy-war.png)
+
+## Start external tool <a name="topic-start-external-tool"></a>
+
+* Tools > Externals Tools and click "tomcat"
